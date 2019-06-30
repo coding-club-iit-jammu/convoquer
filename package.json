@@ -1,0 +1,18 @@
+{
+  "name": "convoquer",
+  "version": "1.0.0",
+  "description": "website for intra-iit sports fest of IIT Jammu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mamun",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "firebase-admin": "^7.0.0",
+    "particles.js": "^2.0.0"
+  }
+}
