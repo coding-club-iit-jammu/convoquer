@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+      <link rel="stylesheet" type="text/css" href="./assets/css/list_current_games.css">
+	<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+                <script>
+  // Initialize Firebase
+        var config = {
+    apiKey: "AIzaSyCbNi1RWyWrBKleZrepI51D-8L5ffUWtVI",
+    authDomain: "testconv-ea8da.firebaseapp.com",
+    databaseURL: "https://testconv-ea8da.firebaseio.com",
+    projectId: "testconv-ea8da",
+    storageBucket: "testconv-ea8da.appspot.com",
+    messagingSenderId: "844201602566"
+                };
+                firebase.initializeApp(config);
+                </script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script type="text/javascript" src="./assets/login_check.js"></script>
+                <script type="text/javascript" src="./assets/list_current_games.js"></script>
+	<title>Ongoing Games</title>
+</head>
+<body>
+    <span class="box">
+	<h1>Select a game to continue</h1>
+	<div id="games-list">
+	    
+	</div>
+    </span>
+</body>
+</html>

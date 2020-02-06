@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="./assets/css/create_new_game.css">
+  <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+                <script>
+  // Initialize Firebase
+        var config = {
+    apiKey: "AIzaSyCbNi1RWyWrBKleZrepI51D-8L5ffUWtVI",
+    authDomain: "testconv-ea8da.firebaseapp.com",
+    databaseURL: "https://testconv-ea8da.firebaseio.com",
+    projectId: "testconv-ea8da",
+    storageBucket: "testconv-ea8da.appspot.com",
+    messagingSenderId: "844201602566"
+                };
+                firebase.initializeApp(config);
+                </script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script type="text/javascript" src="./assets/login_check.js"></script>
+                <script type="text/javascript" src="./assets/create_new_game.js"></script>
+	<title>Start new game</title>
+</head>
+<body>
+	<span class="box">
+	<h1>GAME DETAILS</h1>
+	<span class="game-details">
+		<select id="game-type" name="Game" class="small-box">
+			<option value="football">Football</option>
+			<option value="cricket">Cricket</option>
+			<option value="basketball">Basketball</option>
+			<option value="volleyball">Volleyball</option>
+			<option value="tabletennis">Table Tennis</option>
+			<option value="badminton">Badminton</option>
+			<option value="athletics">Athletics</option>
+			<option value="pool">Pool</option>
+			<option value="chess">Chess</option>
+
+		</select>
+		<select id="game-stage" type="text" class="small-box">
+			<option value="Group Stage">Group Stage</option>
+			<option value="Quarter Finals">Quarter-Final</option>
+			<option value="Semi Finals">Semi-Final</option>
+			<option value="Finals">Final</option>
+		</select>
+	</span>
+	<span class="game-details">
+		<div class="team-details" id="team1-details">
+			<select id="team1-name" type="text" class="small-box">
+				<option value="CSE">CSE</option>
+                                <option value="CSE Girls">CSE Girls</option>
+                                <option value="ME">ME</option>
+                                <option value="ME Girls">ME Girls</option>
+                                <option value="EE">EE</option>
+                                <option value="EE Girls">EE Girls</option>
+                                <option value="Faculty Men">Faculty Men</option>
+                                <option value="Faculty Ladies">Faculty Ladies</option>
+                                <option value="Students Boys">Students Boys</option>
+                                <option value="Students Girls">Students Girls</option>
+                                <option value="Civil + Chem">Civil + Chem</option>
+			</select>
+		</div>
+		<div class="team-details" id="team2-details" class="small-box">
+			<select id="team2-name" type="text" class="small-box">
+				<option value="CSE">CSE</option>
+                                <option value="CSE Girls">CSE Girls</option>
+                                <option value="ME">ME</option>
+                                <option value="ME Girls">ME Girls</option>
+                                <option value="EE">EE</option>
+                                <option value="EE Girls">EE Girls</option>
+                                <option value="Faculty Men">Faculty Men</option>
+                                <option value="Faculty Ladies">Faculty Ladies</option>
+                                <option value="Students Boys">Students Boys</option>
+                                <option value="Students Girls">Students Girls</option>
+                                <option value="Civil + Chem">Civil + Chem</option>
+			</select>
+		</div>
+	</span>
+	<button id="start-button" onclick="create_game()" class="submit">Start Game</button>
+	</span>
+
+</body>
+</html>

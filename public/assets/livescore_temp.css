@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+body {
+  background: #eee;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+.contain {
+  max-width: 800px;
+  margin: 80px auto;
+}
+.text-center {
+  text-align: center;
+}
+.live_template {
+  background: #fff;
+  color: #222;
+  padding: 20px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(34, 34, 34, 0.12);
+  position: relative;
+  overflow: hidden;
+  min-height: 120px;
+  font-size: 100%;
+}
+.live_template p {
+  font-size: 200%;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 80%;
+  font-style: normal;
+
+font-family: 'Kanit', sans-serif;
+
+
+}
+.live_template cite {
+  font-size: 180%;
+  margin-top: 10px;
+  display: block;
+  font-weight: bold;
+  opacity: 0.8;
+}
+@media (max-width: 640px) {
+  .live_template:after {
+    font-size: 22em;
+    right: -25px;
+  }
+}
+.live_template.football {
+  background: #303f9f;
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+.live_template.basketball {
+  background: #d32f2f;
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+.live_template.volleyball {
+  background: #f9a825;
+  color: #222;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+
+.live_template.badminton {
+  background: orange;
+  color: #222;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+
+.live_template.athletics {
+  background: pink;
+  color: #222;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+
+.live_template.pool {
+  background:black;
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+
+.live_template.chess {
+  background:purple;
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+
+.live_template.tabletennis {
+  background: cyan;
+  color: #222;
+  box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+.credits {
+  margin-top: 80px;
+}
+.credits a {
+  color: #222;
+  text-decoration: none;
+  text-shadow: 0 0 2px rgba(34, 34, 34, 0.24);
+  padding-bottom: 1px;
+  display: inline-block;
+  border-bottom: 1px dashed rgba(34, 34, 34, 0.24);
+  opacity: 0.6;
+  transition: 0.3s all ease-in;
+}
+.credits a:hover {
+  border-bottom-style: solid;
+  opacity: 1;
+}

@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+
+
+<html>
+<head>
+	 <link rel="stylesheet" type="text/css" href="./assets/css/scoreboard.css">
+	<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+                <script>
+  // Initialize Firebase
+        var config = {
+    apiKey: "AIzaSyCbNi1RWyWrBKleZrepI51D-8L5ffUWtVI",
+    authDomain: "testconv-ea8da.firebaseapp.com",
+    databaseURL: "https://testconv-ea8da.firebaseio.com",
+    projectId: "testconv-ea8da",
+    storageBucket: "testconv-ea8da.appspot.com",
+    messagingSenderId: "844201602566"
+                };
+                firebase.initializeApp(config);
+                </script>
+                <script type="text/javascript" src="./assets/login_check.js"></script>
+                <script type="text/javascript" src="./assets/scoreboard.js"></script>
+	<title>Score Board</title>
+</head>
+<body onload="score_board('<%=game_details.game_type %>','<%=game_details.game%>')">
+		
+	<span class="box">
+		<br><br><br><br><br>
+		<span class="game-details">
+			<div id="game-name"></div>
+			<h2><%=game_details.game_type %> : <%=game_details.game%> </h2>
+		</span>
+
+		<div id="score-board-control" >
+
+			<h1><div id="team1-name"></div></h1>
+			
+			<h2 id="team1-score"></h2>
+			<h3 id="team1-wickets"></h3>
+			<button id="team1-score-add" onclick='addScore(1,1)'>+</button>
+                        <button id="team1-score-sub" onclick='addScore(1,-1)'>-</button>
+                        <div id="t1w">
+                        	Wicket<br>
+                        	<button id="team1-wicket-add" onclick='addWicket(1,1)'>+</button>
+                       	 	<button id="team1-wicket-sub" onclick='addWicket(1,-1)'>-</button>
+                       	 </div>
+
+			<hr>
+			<h1><div id="team2-name"></div></h1>
+			<h2 id="team2-score"></h2>
+			<h3 id="team2-wickets"></h3>
+			<button id="team2-score-add" onclick="addScore(2,1)">+</button>
+                        <button id="team2-score-sub" onclick='addScore(2,-1)'>-</button>
+                        <div id="t2w">
+                                Wicket<br>
+                                <button id="team2-wicket-add" onclick='addWicket(2,1)'>+</button>
+                                <button id="team2-wicket-sub" onclick='addWicket(2,-1)'>-</button>
+                         </div>
+
+		</div>
+		<button id="game-end" onclick="end_game()">End Game</button>
+	</span>
+
+</body>
+</html>

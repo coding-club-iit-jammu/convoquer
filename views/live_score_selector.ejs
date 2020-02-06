@@ -1,0 +1,30 @@
+</!DOCTYPE html>
+
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="./assets/css/live_score_selector.css">
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+                <script>
+  // Initialize Firebase
+        var config = {
+    apiKey: "AIzaSyCbNi1RWyWrBKleZrepI51D-8L5ffUWtVI",
+    authDomain: "testconv-ea8da.firebaseapp.com",
+    databaseURL: "https://testconv-ea8da.firebaseio.com",
+    projectId: "testconv-ea8da",
+    storageBucket: "testconv-ea8da.appspot.com",
+    messagingSenderId: "844201602566"
+                };
+                firebase.initializeApp(config);
+                </script>
+                <script type="text/javascript" src="./assets/login_check.js"></script>
+	 <script src="./assets/live_score_selector.js"></script>
+	<title></title>
+</head>
+<body>
+    <span class="box">
+	    <button id='new-game-buton' onclick='create_new_game()' class="small-box">Start a new game</button>
+	    <button id='list-games-button' onclick= "window.open('list_current_games','_self')" class="small-box">Continue a game</button>
+        <button id='signout' onclick='sign_out()' class="small-box"> Signout</button>
+    </span>
+</body>
+</html>

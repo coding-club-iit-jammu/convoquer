@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+                <script>
+  // Initialize Firebase
+        var config = {
+    apiKey: "AIzaSyCbNi1RWyWrBKleZrepI51D-8L5ffUWtVI",
+    authDomain: "testconv-ea8da.firebaseapp.com",
+    databaseURL: "https://testconv-ea8da.firebaseio.com",
+    projectId: "testconv-ea8da",
+    storageBucket: "testconv-ea8da.appspot.com",
+    messagingSenderId: "844201602566"
+                };
+                firebase.initializeApp(config);
+                </script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script type="text/javascript" src="./assets/login_check.js"></script>
+                <script type="text/javascript" src="./assets/athletics_score.js"></script>
+	<title>Athletics Score</title>
+</head>
+<body>
+	Event Name :<input type="text" id="event-name">
+	First Position :<input type="text" id="fp">
+	Branch : <select id="branch-1" name="Game" class="small-box">
+                        <option value="cs">Cs</option>
+                        <option value="me">Me</option>
+                        <option value="ee">Ee</option>
+ 
+                </select>
+	Second Position :<input type="text" id="sp">
+		Branch : <select id="branch-2" name="Game" class="small-box">
+                        <option value="cs">Cs</option>
+                        <option value="me">Me</option>
+                        <option value="ee">Ee</option>
+ 
+                </select>
+	Third Position :<input type="text" id="tp">
+		Branch : <select id="branch-3" name="Game" class="small-box">
+                        <option value="cs">Cs</option>
+                        <option value="me">Me</option>
+                        <option value="ee">Ee</option>
+ 
+                </select>
+       <button id="sub" onclick="submit_score()">Submit</button>
+
+
+</body>
+</html>
