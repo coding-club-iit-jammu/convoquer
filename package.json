@@ -12,7 +12,7 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "firebase-admin": "^7.0.0",
+    "firebase-admin": "^11.4.1",
     "particles.js": "^2.0.0"
   }
 }
